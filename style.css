@@ -163,6 +163,17 @@ h1, h2, h3, .badge-text {
     position: relative;
     display: flex;
     justify-content: center;
+       /* Cria o efeito de fade circular/elíptico sem precisar de arquivo .png */
+    -webkit-mask-image: radial-gradient(
+        circle at center, 
+        black 40%, 
+        transparent 85%
+    );
+    mask-image: radial-gradient(
+        circle at center, 
+        black 40%, 
+        transparent 85%
+    );
 }
 .main-photo {
     width: 100%;
